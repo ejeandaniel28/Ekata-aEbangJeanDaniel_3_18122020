@@ -1,0 +1,27 @@
+@mixin tablets {
+    @media screen and (min-width: map-get($breakpoints, tablets)){
+        @content;
+    }
+}
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, desktop)){
+        @content;
+    }
+}
+@mixin btn{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1em;
+    line-height: 2.5em;
+    border-radius: 1.5em;
+    color: #FFF;
+    font-size: 1em;
+    font-weight: normal;
+}
+@mixin btn-hover($color:$color-primary) {
+    background-color: lighten($color, 10%);
+}
+@mixin btn-focus($color:$color-primary) {
+    background-color: lighten($color, 10%);
+}

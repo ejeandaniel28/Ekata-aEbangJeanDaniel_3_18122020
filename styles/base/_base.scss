@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap');
+
+body{
+    width: 100%;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+.conteneur {
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;;
+}
+header{
+    box-shadow: 0px 0px 10px 3px rgba(38, 5, 116, 0.274);
+    position: relative;
+}
+.restaurants-nom{
+    font-size: 1em;
+    font-weight: bold;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #FFF;
+}

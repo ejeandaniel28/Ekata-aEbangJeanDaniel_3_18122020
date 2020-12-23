@@ -1,0 +1,29 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: darken($color-tertiary, 60%);
+    color: $white;
+    @include desktop{
+        flex-direction: row;
+        padding-left: 20%;
+    }
+    @include tablets{
+        flex-direction: row;
+        padding-left: 20%;
+    }
+    &__logo{
+        font-family: 'Shrikhand', cursive;
+        color: $white;
+        font-style: oblique;
+        margin: 1em;
+        margin-bottom: 0;
+    }
+    &__menu{
+        margin-left: 1em;
+        font-size: 1em;
+        line-height: 1.4em;
+        &--bold{
+            font-weight: bold;
+        }
+    }
+}

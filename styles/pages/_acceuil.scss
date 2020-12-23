@@ -1,0 +1,101 @@
+.section-fonctionnement{
+    display: block;
+    margin:  1em;
+    &__titre{
+        @extend .titres-h2;
+        @include desktop{
+            text-align: center;
+        }
+        @include tablets{
+            text-align: center;
+        }
+    }
+}
+.fonctionnement{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @include desktop{
+        flex-direction: row;
+        margin: auto;
+    }
+    &__liste{
+        position: relative;
+        display: flex;
+        width: auto;
+        font-size: 1em;
+        margin-bottom: 1em;
+        flex-direction: row;
+        line-height: 3em;
+        border-radius: 1em;
+        box-shadow: 0px 5px 4px 0px darken($color-tertiary, 5%);
+        background-color: lighten($color-tertiary, 20%);
+        @include desktop{
+            width: 25em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &--num{
+            font-size: 1em;
+            text-align: center;
+            height: 1em;
+            width: 1em;
+            line-height: 1em;
+            margin: auto 1.2em auto 0;
+            color: $white;
+        }
+        &--num.num{
+            display: block;
+            margin-right: 2em;
+            border-radius: 50%;
+            background-color: $color-primary;
+            padding: 0.1em;
+            float: left;
+        }
+        &--fas{
+            margin: auto 1.5em auto 0;
+        }
+    }
+}
+#restaurants{
+    background-color: lighten($color-tertiary, 18%);
+    padding: 1.2em 1em 2em 1em;
+}
+.restaurants__titre{
+    margin: auto;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+#cards{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+.restaurants__cards{
+    width: 20em;
+    height: 12em;
+    display: inline-block;
+    background-color: $white;
+    border-radius: 1em;
+    margin: auto;
+    margin-bottom: 1em;
+    box-shadow: 0px 2px 7px 0px darken($color-tertiary, 1%);
+    &--description{
+        float: left;
+        margin: 1em;
+    }
+    &--icon{
+        float: right;
+        margin: 1em;
+        padding-top: 0.5em;
+    }
+}
+.card-image img{
+    display: block;
+    width: 100%;
+    height: 8em;
+    border-radius: 1em 1em 0 0;
+}
+.restaurants__titre{
+    @extend .titres-h2;
+}
