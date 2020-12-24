@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap");
 body {
   width: 100%;
-  position: absolute;
+  height: 100%;
 }
 
 p {
@@ -22,10 +22,6 @@ main {
 
 header {
   box-shadow: 0px 0px 10px 3px rgba(38, 5, 116, 0.274);
-}
-
-footer {
-  width: 100%;
 }
 
 .restaurants-nom {
@@ -64,11 +60,6 @@ button {
   position: fixed;
   width: 100%;
   background-color: #FFF;
-}
-@media screen and (min-width: 992px) {
-  .header {
-    position: fixed;
-  }
 }
 .header__logo {
   display: block;
@@ -149,10 +140,6 @@ button {
 }
 .footer__menu--bold {
   font-weight: bold;
-}
-
-.pages-footer {
-  padding-top: 10em;
 }
 
 .btn {
@@ -328,10 +315,15 @@ header .fas {
 
 .menus {
   position: relative;
-  bottom: 10em;
+  top: -2em;
+  padding-bottom: 2em;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   width: 100%;
+  background-color: #e8f9f5;
+}
+
+.main-background-pages {
   background-color: #e8f9f5;
 }
 

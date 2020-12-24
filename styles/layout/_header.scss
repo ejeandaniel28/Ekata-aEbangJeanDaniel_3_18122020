@@ -2,9 +2,6 @@
     position: fixed;
     width: 100%;
     background-color: $white;
-    @include desktop{
-        position: fixed;
-    }
     &__logo{
         display: block;
         margin-left: auto;
