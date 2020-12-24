@@ -8,6 +8,11 @@
         @content;
     }
 }
+@mixin tablets-L {
+    @media screen and (min-width: map-get($breakpoints, tablets-L)){
+        @content;
+    }
+}
 @mixin btn{
     display: inline-block;
     margin-left: auto;

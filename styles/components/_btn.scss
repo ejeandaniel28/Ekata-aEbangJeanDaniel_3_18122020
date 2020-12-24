@@ -1,7 +1,7 @@
 .btn{
     @include btn;
     background-color: $color-primary;
-    transition: background-color 700ms ease-out;
+    transition: background-color 200ms ease-out;
     &:hover{
         @include btn;
         @include btn-hover;

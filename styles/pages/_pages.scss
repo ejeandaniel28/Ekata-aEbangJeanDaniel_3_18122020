@@ -1,0 +1,106 @@
+header .fas{
+    position: absolute;
+    padding-top: 1.2em;
+    margin-left: 1.5em;
+}
+.img-menus img{
+    width: 100%;
+    @include desktop{
+        width: 50em;
+        padding-top: 0;
+        border-radius: 50%;
+    }
+    @include tablets{
+        width: 28em;
+        padding-top: 0;
+        border-radius: 50%;
+        margin-left: 20%;
+        margin-right: 10%;
+    }
+    @include tablets-L{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+.menus{
+    position: relative;
+    bottom: 10em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    background-color: lighten($color-tertiary, 20%);
+}
+.menu-top{
+    display: flex;
+    flex-direction: row;
+    &__titre{
+        display: flex;
+        flex-direction: row;
+        font-family: 'Shrikhand', cursive;
+        font-style: oblique;
+        font-size: 0.8em;
+        margin: auto;
+        margin-left: 1em;
+        &--icon{
+            position: absolute;
+            right: 2em;
+            top: 1.3em;
+            color: darken($color-tertiary, 40%);
+        }
+    }
+}
+.menus-types{
+    margin: 0 1em 0 1em;
+    padding-bottom: 0.1em;
+    &__titre{
+        font-size: 0.7em;
+        padding-bottom: 1em;
+        color: darken($color-tertiary,40%);
+    }
+    &__bordure{
+        position: relative;
+        bottom: 0.7em;
+        border-top: 2px white solid;
+        width: 1.8em;
+        border-color: darken($color-tertiary,40%);
+    }
+    &__menu{
+        margin-bottom: 1em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        background-color: $white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 0px darken($color-tertiary,5%);
+        width: auto
+    }
+}
+.menus-modif{
+    display: flex;
+    &__nom{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin-left: 1em;
+        &--1{
+            font-weight: bold;
+            font-size: 0.8em;
+        }
+        &--2{
+            font-weight: lighter;
+            font-size: 0.7em;
+        }
+    }
+    &__prix{
+        font-weight: bold;
+        font-size: 0.6em;
+        padding-top: 1.5em;
+    }
+}
+.btn-pages{
+    font-size: small;
+    font-weight: lighter;
+    width: 8em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 0;
+}
