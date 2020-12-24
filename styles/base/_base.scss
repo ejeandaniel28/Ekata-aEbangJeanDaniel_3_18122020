@@ -29,8 +29,12 @@ ul{
     padding: 0;
 }
 a{
+    display: inline-block;
     text-decoration: none;
     color: #FFF;
+}
+header a{
+    display: inline;
 }
 button{
     text-decoration: none;
