@@ -40,16 +40,12 @@ a {
   color: #FFF;
 }
 
-header a {
-  display: inline;
-}
-
 button {
   text-decoration: none;
   border: none;
 }
 
-.titres-h1, .header__baseline--titre {
+.titres-h1, .baseline__baseline--titre {
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2em;
@@ -73,44 +69,6 @@ button {
   padding-top: 1em;
   padding-bottom: 0.5em;
   height: 1.5em;
-}
-.header__fas {
-  font-size: 1em;
-  padding-right: 1em;
-  font-size: 0.8em;
-}
-.header__localisation {
-  display: block;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: #b9ebdf;
-  padding-bottom: 0.7em;
-  padding-top: 0.7em;
-  font-weight: normal;
-  font-size: 0.8em;
-}
-.header__baseline {
-  background-color: #e0f6f1;
-  padding-top: 0.1em;
-}
-.header__baseline--titre {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1em;
-  text-align: center;
-}
-.header__baseline--decouverte {
-  text-align: center;
-  padding-bottom: 1.5em;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
-  font-size: 1em;
-  font-weight: lighter;
-}
-.header__baseline--btn {
-  text-align: center;
-  padding-bottom: 3em;
 }
 
 .footer {
@@ -144,7 +102,17 @@ button {
   line-height: 1.4em;
 }
 .footer__menu--bold {
+  display: flex;
+  flex-direction: row;
   font-weight: bold;
+}
+
+.fas.fa-handshake {
+  margin-right: 0.6em;
+}
+
+.fas.fa-utensils {
+  margin-right: 1em;
 }
 
 .btn {
@@ -177,6 +145,66 @@ button {
   background-color: #ae80e5;
 }
 
+@media screen and (min-width: 992px) {
+  .bloc12 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #e0f6f1;
+    border-bottom: 2px #9356DC double;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .baseline {
+    border-right: 2px #9356DC double;
+  }
+}
+.baseline__fas {
+  font-size: 1em;
+  padding-right: 1em;
+  font-size: 0.8em;
+}
+.baseline__localisation {
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #b9ebdf;
+  padding-bottom: 0.7em;
+  padding-top: 0.7em;
+  font-weight: normal;
+  font-size: 0.8em;
+}
+@media screen and (min-width: 992px) {
+  .baseline__localisation {
+    width: 100%;
+    border-bottom: 2px #9356DC double;
+  }
+}
+.baseline__baseline {
+  text-align: center;
+  background-color: #e0f6f1;
+  padding-top: 0.1em;
+  padding-bottom: 2em;
+}
+.baseline__baseline--titre {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1em;
+  text-align: center;
+}
+.baseline__baseline--decouverte {
+  text-align: center;
+  padding-bottom: 1.5em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  font-size: 1em;
+  font-weight: lighter;
+}
+.baseline__baseline--btn {
+  text-align: center;
+}
+
 .section-fonctionnement {
   display: block;
   margin: 1em;
@@ -199,8 +227,9 @@ button {
 }
 @media screen and (min-width: 992px) {
   .fonctionnement {
-    flex-direction: row;
+    flex-direction: column;
     margin: auto;
+    margin-top: 0;
   }
 }
 .fonctionnement__liste {
@@ -213,6 +242,12 @@ button {
   border-radius: 1em;
   box-shadow: 0px 5px 4px 0px #85dcc7;
   background-color: #e8f9f5;
+}
+.fonctionnement__liste:hover {
+  background-color: #ece1f9;
+}
+.fonctionnement__liste:hover .fas {
+  color: #9356DC;
 }
 @media screen and (min-width: 992px) {
   .fonctionnement__liste {
@@ -231,12 +266,11 @@ button {
   color: #FFF;
 }
 .fonctionnement__liste--num.num {
-  left: -7px;
-  bottom: 1.5px;
   margin-right: 2em;
   border-radius: 50%;
   background-color: #9356DC;
   padding: 0.1em;
+  margin: -2px 0px 0px -7px;
 }
 .fonctionnement__liste--fas {
   margin: auto 1.5em auto 0;
@@ -260,6 +294,7 @@ button {
 }
 
 .restaurants__cards {
+  position: relative;
   width: 20em;
   height: 12em;
   display: inline-block;
@@ -279,12 +314,26 @@ button {
   margin: 1em;
   padding-top: 0.5em;
 }
+.restaurants__cards--icon .far {
+  color: black;
+}
 
 .card-image img {
   display: block;
   width: 100%;
   height: 8em;
+  object-fit: cover;
   border-radius: 1em 1em 0 0;
+}
+
+.card-image__notif {
+  position: absolute;
+  top: 1em;
+  right: 0.8em;
+  padding: 0.4em;
+  border-radius: 5px;
+  background-color: #99E2D0;
+  color: #278870;
 }
 
 header .fas {
@@ -296,12 +345,14 @@ header .fas {
 
 .img-menus img {
   width: 100%;
+  object-fit: cover;
 }
 @media screen and (min-width: 992px) {
   .img-menus img {
     width: 50em;
     padding-top: 0;
     border-radius: 50%;
+    object-fit: cover;
   }
 }
 @media screen and (min-width: 768px) {
@@ -311,12 +362,14 @@ header .fas {
     border-radius: 50%;
     margin-left: 20%;
     margin-right: 10%;
+    object-fit: cover;
   }
 }
 @media screen and (min-width: 1024px) {
   .img-menus img {
     padding-left: 10%;
     padding-right: 10%;
+    object-fit: cover;
   }
 }
 

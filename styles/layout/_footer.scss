@@ -23,7 +23,15 @@
         font-size: 1em;
         line-height: 1.4em;
         &--bold{
+            display: flex;
+            flex-direction: row;
             font-weight: bold;
         }
     }
+}
+.fas.fa-handshake{
+    margin-right: 0.6em;
+}
+.fas.fa-utensils{
+    margin-right: 1em;
 }
