@@ -1,0 +1,101 @@
+/* ---------LOADING SPINNER (1) --------- */
+@keyframes opacity {
+    to{
+        visibility: visible;
+    }
+    from{
+        visibility: hidden;
+    }
+}
+/* ---------LOADING SPINNER (2) --------- */
+@keyframes loading {
+    0%{
+        color: $color-primary;
+        text-shadow: 0 0 4px $color-primary;
+    }
+    60%{
+        color: $color-secondary;
+        text-shadow: 0 0 4px $color-secondary;
+    }
+    90%{
+        color: $color-tertiary;
+        text-shadow: none;
+    }
+    100%{
+        text-shadow: 0 0 4px $color-primary;
+    }
+}
+/* --------- ANIMATION HOVER HEART
+@keyframes heartanim{
+    0%{
+        background: -webkit-linear-gradient(bottom ,$white,$color-primary);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    30%{
+        background: -webkit-linear-gradient(bottom right,$white,$color-primary);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    60%{
+        background: -webkit-linear-gradient(top,$color-primary,$white);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    100%{
+        background: -webkit-linear-gradient(top,$color-primary,$color-secondary);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+} --------- */
+/* @keyframes heartanim{
+    10%{
+        background: -webkit-linear-gradient(top,lighten($color-secondary, 100%) 80%,$color-primary 20%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    30%{
+        background: -webkit-linear-gradient(top,($color-secondary, 80%) 70%,$color-primary 40%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    60%{
+        background: -webkit-linear-gradient(top,$white 40%,$color-primary 60%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    90%{
+        background: -webkit-linear-gradient(center,lighten($color-secondary, 40%),$color-primary 60%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    100%{
+        background: -webkit-linear-gradient(bottom,$color-primary,$color-secondary);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+} */
+@keyframes heartanim{
+    to{
+        opacity: 1;
+    }
+    from{
+        opacity: 0;
+    }
+}
+@keyframes fadein{
+    to{
+        opacity: 1;
+    }
+    from{
+        opacity: 0;
+    }
+}
+@keyframes cloche{
+    to{
+        transform: rotate(360deg);
+    }
+    from{
+        transform: rotate(0deg);
+    }
+}

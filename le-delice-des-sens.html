@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ohmyfood - Le délice des sens</title>
-    <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="styles/prefixed/style.css"/>
     <script src="https://kit.fontawesome.com/68ba24e46e.js" crossorigin="anonymous"></script>
 </head>
 <body class="conteneur">
-    <!--PARTIE HEADER-->
+    <!-- PARTIE HEADER -->
     <header class="header">
         <a href="./index.html">
             <i class="fas fa-arrow-left"></i>
@@ -16,16 +16,16 @@
         <img class="header__logo" src="img/logos/ohmyfood.png" alt="Ohmyfood">
     </header>
     <main class="main-background-pages">
-         <!-- PARTIE IMAGE BACKGROUD -->
+         <!-- PARTIE IMAGE BACKGROUD  -->
         <div class="header__baseline">
             <div class="img-menus">
-                <img src="img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
+                <img src="img/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Le délice des sens">
             </div>
         </div>
-        <!-- SECTION MENUS -->
+        <!-- SECTION MENUS  -->
         <section class="menus">
             <div class="menu-top">
-                <!-- TITRE MENU -->
+                <!-- TITRE MENU  -->
                 <div class="menu-top__titre">
                     <h1>Le délice des sens</h1>
                 </div>
@@ -33,15 +33,15 @@
                     <i class="menu-top__icon--far far fa-heart"></i>
                 </div>
             </div>
-            <!-- TYPE DE MENU "ENTRÉES"-->
+            <!-- TYPE DE MENU "ENTRÉES" -->
             <div class="menus-types">
                 <div class="menus-types__titre">
-                    <p>ENTRÉES<p></p>
+                    <p>ENTRÉES</p>
                 </div>
-                <!-- BORDURE TYPE de MENU -->
+                <!-- BORDURE TYPE de MENU  -->
                 <div class="menus-types__bordure">
                 </div>
-                <!-- MENU 1 -->
+                <!-- MENU 1  -->
                 <div class="menus-types__menu">
                     <div class="menus-modif">
                         <div class="menus-modif__nom">
@@ -49,15 +49,16 @@
                                 <p>Tartare de thon</p>
                             </div>
                             <div class="menus-modif__nom--2">
-                                <p>Assaisonné au yuzu</p>
+                                <p class="subtitle">Assaisonné au yuzu</p>
+                                <p class="prix">25€</p>
                             </div>
                         </div>
-                        <div class="menus-modif__prix">
-                            <p>25€</p>
+                        <div class="menus-modif__animation">
+                            <i class="far fa-check-circle"></i>
                         </div>
                     </div>
                 </div>
-                <!-- MENU 2 -->
+                <!-- MENU 2  -->
                 <div class="menus-types__menu">
                     <div class="menus-modif">
                         <div class="menus-modif__nom">
@@ -65,15 +66,16 @@
                                 <p>Bouchée de homard croustillant</p>
                             </div>
                             <div class="menus-modif__nom--2">
-                                <p>Et sa farandole de petits légumes</p>
+                                <p class="subtitle">Et sa farandole de petits légumes</p>
+                                <p class="prix">35€</p>
                             </div>
                         </div>
-                        <div class="menus-modif__prix">
-                            <p>35€</p>
+                        <div class="menus-modif__animation">
+                            <i class="far fa-check-circle"></i>
                         </div>
                     </div>
                 </div>
-                <!-- MENU 3 -->
+                <!-- MENU 3  -->
                 <div class="menus-types__menu">
                     <div class="menus-modif">
                         <div class="menus-modif__nom">
@@ -81,40 +83,42 @@
                                 <p>Velouté de cèpes</p>
                             </div>
                             <div class="menus-modif__nom--2">
-                                <p>Aux truffes</p>
+                                <p class="subtitle">Aux truffes</p>
+                                <p class="prix">20€</p>
                             </div>
                         </div>
-                        <div class="menus-modif__prix">
-                            <p>20€</p>
+                        <div class="menus-modif__animation">
+                            <i class="far fa-check-circle"></i>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- TYPE DE MENU "PLATS"-->
+            <!-- TYPE DE MENU "PLATS -->
             <div class="menus-types">
                 <div class="menus-types__titre">
                     <p>PLATS<p></p>
                 </div>
-                <!-- BORDURE TYPE de MENU -->
+                <!-- BORDURE TYPE de MENU  -->
                 <div class="menus-types__bordure">
                 </div>
-                <!-- MENU 1 -->
+                <!-- MENU 1  -->
                 <div class="menus-types__menu">
                     <div class="menus-modif">
                         <div class="menus-modif__nom">
                             <div class="menus-modif__nom--1">
-                                <p>Poulet rôti aux herbes de Provence</p>
+                                <p>Poulet rôti aux herbes de Provence </p>
                             </div>
                             <div class="menus-modif__nom--2">
-                                <p>Et sa crème de truffe</p>
+                                <p class="subtitle">Et sa crème de truffe</p>
+                                <p class="prix">40€</p>
                             </div>
                         </div>
-                        <div class="menus-modif__prix">
-                            <p>40€</p>
+                        <div class="menus-modif__animation">
+                            <i class="far fa-check-circle"></i>
                         </div>
                     </div>
                 </div>
-                <!-- MENU 2 -->
+                <!-- MENU 2  -->
                 <div class="menus-types__menu">
                     <div class="menus-modif">
                         <div class="menus-modif__nom">
@@ -122,15 +126,16 @@
                                 <p>Langouste rôtie</p>
                             </div>
                             <div class="menus-modif__nom--2">
-                                <p>Et ses légumes de saison</p>
+                                <p class="subtitle">Et ses légumes de saison</p>
+                                <p class="prix">35€</p>
                             </div>
                         </div>
-                        <div class="menus-modif__prix">
-                            <p>35€</p>
+                        <div class="menus-modif__animation">
+                            <i class="far fa-check-circle"></i>
                         </div>
                     </div>
                 </div>
-                <!-- MENU 3 -->
+                <!-- MENU 3  -->
                 <div class="menus-types__menu">
                     <div class="menus-modif">
                         <div class="menus-modif__nom">
@@ -138,24 +143,25 @@
                                 <p>Côte de boeuf Angus</p>
                             </div>
                             <div class="menus-modif__nom--2">
-                                <p>Et sa purée de panais</p>
+                                <p class="subtitle">Et sa purée de panais</p>
+                                <p class="prix">44€</p>
                             </div>
                         </div>
-                        <div class="menus-modif__prix">
-                            <p>44€</p>
+                        <div class="menus-modif__animation">
+                            <i class="far fa-check-circle"></i>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- TYPE DE MENU "DESSERTS"-->
+            <!-- TYPE DE MENU "DESSERTS -->
             <div class="menus-types">
                 <div class="menus-types__titre">
                     <p>DESSERTS<p></p>
                 </div>
-                <!-- BORDURE TYPE de MENU -->
+                <!-- BORDURE TYPE de MENU  -->
                 <div class="menus-types__bordure">
                 </div>
-                <!-- MENU 1 -->
+                <!-- MENU 1  -->
                 <div class="menus-types__menu">
                     <div class="menus-modif">
                         <div class="menus-modif__nom">
@@ -163,15 +169,16 @@
                                 <p>Farandole de desserts</p>
                             </div>
                             <div class="menus-modif__nom--2">
-                                <p>Du chef</p>
+                                <p class="subtitle">Du chef</p>
+                                <p class="prix">18€</p>
                             </div>
                         </div>
-                        <div class="menus-modif__prix">
-                            <p>18€</p>
+                        <div class="menus-modif__animation">
+                            <i class="far fa-check-circle"></i>
                         </div>
                     </div>
                 </div>
-                <!-- MENU 2 -->
+                <!-- MENU 2  -->
                 <div class="menus-types__menu">
                     <div class="menus-modif">
                         <div class="menus-modif__nom">
@@ -179,15 +186,16 @@
                                 <p>Crème brulée</p>
                             </div>
                             <div class="menus-modif__nom--2">
-                                <p>Revisitée</p>
+                                <p class="subtitle">Revisitée</p>
+                                <p class="prix">22€</p>
                             </div>
                         </div>
-                        <div class="menus-modif__prix">
-                            <p>22€</p>
+                        <div class="menus-modif__animation">
+                            <i class="far fa-check-circle"></i>
                         </div>
                     </div>
                 </div>
-                <!-- MENU 3 -->
+                <!-- MENU 3  -->
                 <div class="menus-types__menu">
                     <div class="menus-modif">
                         <div class="menus-modif__nom">
@@ -195,11 +203,12 @@
                                 <p>Tiramisu</p>
                             </div>
                             <div class="menus-modif__nom--2">
-                                <p>À la noisette</p>
+                                <p class="subtitle">À la noisette</p>
+                                <p class="prix">23€</p>
                             </div>
                         </div>
-                        <div class="menus-modif__prix">
-                            <p>23€</p>
+                        <div class="menus-modif__animation">
+                            <i class="far fa-check-circle"></i>
                         </div>
                     </div>
                 </div>

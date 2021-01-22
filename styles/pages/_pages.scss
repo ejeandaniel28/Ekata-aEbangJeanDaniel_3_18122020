@@ -17,6 +17,12 @@
     }
 }
 .menus{
+    @include desktop{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        border: $color-secondary 0.5em dashed ;
+    }
     position: relative;
     top: -2em;
     padding-bottom: 2em;
@@ -43,11 +49,42 @@
             position: absolute;
             right: 2em;
             top: 1.3em;
-            color: darken($color-tertiary, 40%);
+            cursor: pointer;
+            .far{
+                &:hover{
+                    animation: heartanim 1200ms cubic-bezier(.26,.74,.73,.03) both;
+                    font-weight: 900;
+                    background: -webkit-linear-gradient(bottom,$color-primary,$color-secondary);
+                    -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                }
+            }
+            /*.far{
+                font-weight: normal;
+                color: darken($color-tertiary, 40%);
+                &:hover{
+                    animation: heartanim 1200ms linear both;
+                    font-weight: 900;
+                    background: -webkit-linear-gradient(top,lighten($color-secondary, 100%) 80%,$color-primary 20%);
+                    -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: text;
+                }
+            } */
         }
     }
 }
 .menus-types{
+    opacity: 0;
+    animation: fadein 4s linear 1s both;
+    &:nth-child(2){
+        animation-delay: 2s;
+    }
+    &:nth-child(3){
+        animation-delay: 3s;
+    }
+    &:nth-child(4){
+        animation-delay: 4s;
+    }
     margin: 0 1em 0 1em;
     padding-bottom: 0.1em;
     &__titre{
@@ -69,15 +106,25 @@
         background-color: $white;
         border-radius: 10px;
         box-shadow: 0px 0px 5px 0px darken($color-tertiary,5%);
-        width: auto
+        width: auto;
+        
     }
 }
 .menus-modif{
+    :hover>&__animation{
+        width: 40%;
+        visibility: visible;
+        transition: width 1s ease-in;
+    }
+    :hover>&__animation .far{
+        animation: cloche 1s ease-in;
+    }
     display: flex;
+    cursor: pointer;
     &__nom{
         display: flex;
         flex-direction: column;
-        width: 85%;
+        width: 100%;
         margin-left: 1em;
         &--1{
             font-weight: bold;
@@ -86,12 +133,37 @@
         &--2{
             font-weight: lighter;
             font-size: 0.7em;
+            display: flex;
+            justify-content: space-between;
+            .subtitle{
+                width: 90%;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            .prix{
+                margin-left: 25%;
+                margin-right: 7%;
+                font-weight: bold;
+            }
         }
     }
-    &__prix{
-        font-weight: bold;
-        font-size: 0.6em;
-        padding-top: 1.5em;
+    &__animation{
+        overflow: hidden;
+        margin-top: -8px;
+        margin-bottom: -8px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background: $color-tertiary;
+        width: 0%;
+        /**/
+        .far{
+            font-weight: 900;
+            color: lighten($color-tertiary, 80%);
+            position: relative;
+            margin-left: 40%;
+            bottom: -13px;
+        }
     }
 }
 .btn-pages{
