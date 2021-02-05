@@ -52,7 +52,7 @@
     @include desktop{
         display: grid;
         grid-template-columns: 50% 50%;
-        background-color: lighten($color-tertiary, 18%);
+        background-color: $background2;
         border-bottom: 2px $color-primary double;
     }
 }
@@ -70,7 +70,7 @@
         text-align: center;
         margin-right: auto;
         margin-left: auto;
-        background-color: lighten($color-tertiary, 8%);
+        background-color: $background1;
         padding-bottom: 0.7em;
         padding-top: 0.7em;
         font-weight: normal;
@@ -82,9 +82,12 @@
     }
     &__baseline{
         text-align: center;
-        background-color: lighten($color-tertiary, 18%);
+        background-color: $background2;
         padding-top: 0.1em;
         padding-bottom: 2em;
+        @include desktop{
+            padding: 8%;
+        }
         &--titre{
             margin-left: auto;
             margin-right: auto;
@@ -134,9 +137,10 @@
         margin-bottom: 1em;
         flex-direction: row;
         line-height: 3em;
-        border-radius: 1em;
-        box-shadow: 0px 5px 4px 0px darken($color-tertiary, 5%);
-        background-color: lighten($color-tertiary, 20%);
+        border-radius: 2em;
+        padding: 0.8rem 0 0.8rem 0;
+        box-shadow: 3px 3px 10px #dedada;
+        background-color: $background2;
         &:hover{
             background-color: lighten($color-primary, 33%);
             .fas{
@@ -170,7 +174,7 @@
     }
 }
 #restaurants{
-    background-color: lighten($color-tertiary, 18%);
+    background-color: $background2;
     padding: 1.2em 1em 2em 1em;
 }
 .restaurants__titre{
@@ -212,13 +216,14 @@
                 background: -webkit-linear-gradient(bottom,$color-primary,$color-secondary);
                 -webkit-text-fill-color: transparent;
                 -webkit-background-clip: text;
+                background-clip: text;
             }
         }
     }
 }
 .card-image img{
     display: block;
-    width: 100%;
+    width: 20em;
     height: 8em;
     object-fit: cover;
     border-radius: 1em 1em 0 0;

@@ -1,7 +1,7 @@
 .footer{
     display: flex;
     flex-direction: column;
-    background-color: darken($color-tertiary, 60%);
+    background-color: #000;
     color: $white;
     @include desktop{
         flex-direction: row;
@@ -22,6 +22,7 @@
         margin-left: 1em;
         font-size: 1em;
         line-height: 1.4em;
+        background-color: black;
         &--bold{
             display: flex;
             flex-direction: row;

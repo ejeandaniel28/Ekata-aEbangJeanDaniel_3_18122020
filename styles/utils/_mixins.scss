@@ -17,12 +17,13 @@
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 1em;
-    line-height: 2.5em;
-    border-radius: 1.5em;
+    padding: 0.5em 0.8em;
+    line-height: 2em;
+    border-radius: 5em;
     color: #FFF;
     font-size: 1em;
     font-weight: normal;
+    background-image: radial-gradient(ellipse farthest-corner at 0px 2px, $color-secondary 0%,$color-primary 100%);
 }
 @mixin btn-hover($color:$color-primary) {
     background-color: lighten($color, 10%);
