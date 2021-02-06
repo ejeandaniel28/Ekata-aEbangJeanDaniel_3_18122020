@@ -24,6 +24,7 @@
     font-size: 1em;
     font-weight: normal;
     background-image: radial-gradient(ellipse farthest-corner at 0px 2px, $color-secondary 0%,$color-primary 100%);
+    transition: all 1s ease-in-out;
 }
 @mixin btn-hover($color:$color-primary) {
     background-image: radial-gradient(ellipse farthest-corner at 0px 2px, $color-secondary 0%,lighten($color-primary,10%) 100%);
