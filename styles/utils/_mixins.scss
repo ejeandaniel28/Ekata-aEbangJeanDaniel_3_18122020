@@ -26,8 +26,8 @@
     background-image: radial-gradient(ellipse farthest-corner at 0px 2px, $color-secondary 0%,$color-primary 100%);
 }
 @mixin btn-hover($color:$color-primary) {
-    background-color: lighten($color, 10%);
+    background-image: radial-gradient(ellipse farthest-corner at 0px 2px, $color-secondary 0%,lighten($color-primary,10%) 100%);
 }
 @mixin btn-focus($color:$color-primary) {
-    background-color: lighten($color, 10%);
+    background-image: radial-gradient(ellipse farthest-corner at 0px 2px, $color-secondary 0%,lighten($color-primary,10%) 100%);
 }

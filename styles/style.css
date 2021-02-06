@@ -237,7 +237,6 @@ header .fas {
   font-size: 1em;
   font-weight: normal;
   background-image: radial-gradient(ellipse farthest-corner at 0px 2px, #FF79DA 0%, #9356DC 100%);
-  background-color: #9356DC;
   transition: background-color 200ms ease-out;
 }
 .btn:hover {
@@ -251,11 +250,11 @@ header .fas {
   font-size: 1em;
   font-weight: normal;
   background-image: radial-gradient(ellipse farthest-corner at 0px 2px, #FF79DA 0%, #9356DC 100%);
-  background-color: #ae80e5;
+  background-image: radial-gradient(ellipse farthest-corner at 0px 2px, #FF79DA 0%, #ae80e5 100%);
   box-shadow: 0px 0px 10px 3px rgba(38, 5, 116, 0.274);
 }
 .btn:focus {
-  background-color: #ae80e5;
+  background-image: radial-gradient(ellipse farthest-corner at 0px 2px, #FF79DA 0%, #ae80e5 100%);
 }
 
 .chargement {
