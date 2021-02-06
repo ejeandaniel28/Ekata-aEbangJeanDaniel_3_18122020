@@ -238,7 +238,6 @@ header .fas {
   font-weight: normal;
   background-image: radial-gradient(ellipse farthest-corner at 0px 2px, #FF79DA 0%, #9356DC 100%);
   transition: all 1s ease-in-out;
-  transition: background-color 200ms ease-out;
 }
 .btn:hover {
   display: inline-block;
